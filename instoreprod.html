@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Store Products</title>
+    <link rel="icon" type="image" href="./images/iconcoffee.ico">
+
+     <!--stylesheets -->
+    <link rel="stylesheet" type="text/css" href="./css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="./css/instoreprod.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer.css">
+
+    <!--font awesome icons(custom kit)-->
+    <script src="https://kit.fontawesome.com/a067fef9cd.js" crossorigin="anonymous"></script>
+
+    <!--jQuery library CDN link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    
+    <!--Menu bar-->
+    <div class="menuwrapper">
+        
+        <nav class="topnav">
+            <a href="index.html"><span class="logo"><img src="./images/iconcoffee.png" id="imglogo"></span></a>
+            <button id="hamburger" class="hamburger">
+                <i class="fa fa-bars"></i>
+            </button> 
+            
+            <ul id="navLinks" class="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a>
+                    
+                    <!--dropdown child items-->
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="menu.html">Hot & Cold Drinks</a></li>
+                            <li><a href="menu.html">Sandwiches & Pastries</a></li>
+                            <li><a href="menu.html">Staff Picks</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="instoreprod.html">Products</a>
+
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="#prtitle">In-Store Products</a></li>
+                            <li><a href="#prsubtitle">Seasonal</a></li>
+                        </ul>
+                    </div>  
+                </li>
+                <li><a href="meettheteam.html">Meet the Team</a>
+                
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="meettheteam.html">About Us</a></li>
+                            <li><a href="meettheteam.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!--Login options-->
+                <div class="membercont">
+                    <a href="#" class="memberinfo">Sign In</a>
+                    <a href="#" class="memberinfo">Become a Member</a>
+                </div>
+
+                <!--Cart info-->
+                <div class="shopinfo">
+                    <div class="fa fa-cart-shopping" class="cartbtn" id="cartbtn"></div>
+                </div>
+
+                  <!--Cart items -->
+                  <div class="cart-items-container" id="cart-items-container">
+                   
+                    <div class="cart-item">
+                        <span class="fa fa-times"></span>
+                        <img src="./images/coffee2.png" alt="">
+                        <div class="content">
+                            <h3>item 1</h3>
+                            <div class="price">$8.99/-</div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+
+                        <span class="fa fa-times"></span>
+                        <img src="./images/coffee3.png" alt="">
+                        <div class="content">
+                            <h3>item 2</h3>
+                            <div class="price">$10.99/-</div>
+                        </div>
+                    </div>
+                    <a href="#" class="checkoutbtn">Checkout Now</a>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <!--Body head contents-->
+    <div class="introp">
+        
+        <div class="intropdesc">
+            <h2>Great Products, Only For You</h2>  
+
+            <div class="introlinkcont">
+                <a href="#prtitle">View Items</a>
+            </div> 
+        </div> 
+    </div>
+    
+    <!--Main body contents-->
+    <div class="prtitle" id="prtitle"> <h2>BROWSE FROM OUR SELECTION</h2>
+    <p><i>While Supplies last* . <br />Talk to a staff for more details.</i></p>
+    </div>
+
+     <!--Container 1-->
+    <div class="prcont1">
+        
+        <div class="prcolcont prcol1">
+            <h2>Holiday Mugs</h2>
+            <img src="./images/mug.png" alt="mugforgift"><br />
+            <div class="priceSn"><label>$10.99</label></div>
+
+            <button class="addOrder">Add to Order</button><br />
+        </div>
+
+        <div class="prcolcont prcol2">
+            <h2>Notebook</h2>
+            <img src="./images/notebook.png" alt="notebooksetforgift"><br />
+            <div class="priceSn"><label>$8.99</label></div>
+
+            <button class="addOrder">Add to Order</button>
+        </div>
+
+        <div class="prcolcont prcol3">
+            <h2>Winter Scarf</h2>
+            <img src="./images/scarf.png" alt="scarfforgift"><br />
+            <div class="priceSn"><label>$15.99</label></div>
+
+            <button class="addOrder">Add to Order</button>
+        </div>
+    </div>
+
+    <!--Container 2-->
+    <div class="prsubtitle" id="prsubtitle"><h2><span>SEASONAL</span> ITEMS</h2></div>
+    
+    <div class="prcont2">
+
+        <div class="prcolcont prcol4">
+            <h2>Holiday Bag</h2>
+            <img src="./images/bag.png" alt="bagforgift"><br />
+            <div class="priceSn"><label>$25.99</label></div>
+
+            <button class="addOrder">Add to Order</button>
+        </div>
+
+        <div class="prcolcont prcol5">
+            <h2>Christmas Hat</h2>
+            <img src="./images/chat.png" alt="hatforgift"><br />
+            <div class="priceSn"><label>$8.99</label></div>
+
+            <button class="addOrder">Add to Order</button>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <div class="footer">
+
+        <div class="footercont">
+            <div class="row">
+                <div class="footercol">
+                    <h4>OUR STORY</h4>
+
+                    <ul>
+                        <li><a href="#">Our Coffee</a></li>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">Our Customer Service</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footercol">
+                    <h4>WORK WITH US</h4>
+
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Internal Corporate Careers</a></li>
+                        <li><a href="#">Retail Barista Roles</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footercol">
+                    <h4>GENERAL INQUIRIES</h4>
+
+                    <ul>
+                        <li><a href="#">How to Order on the App</a></li>
+                        <li><a href="#">How to Order Online</a></li>
+                        <li><a href="#">Delivery or Pickup Options</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                    </ul>
+                </div>
+
+        
+                <div class="footercol">
+                    <h4>CONNECT WITH US</h4>
+
+                    <div class="soc-links">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+
+                    <div class="iinfos">
+                        <a href="#">Terms of Use</a> <a href="#">Privacy</a>
+                    </div>
+                </div>  
+            </div>
+                 <div class="footercr">Project website created by MarkDR.</div>
+        </div>
+    </div>
+
+   <!--external JS file-->
+   <script src="./javascript/navbar.js"></script> 
+   <script src="./javascript/cart.js"></script>
+</body>
+</html>

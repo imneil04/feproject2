@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+:root {
+    --body-color:#fff;
+    --text-color:#fff;
+    --link-color:#87ceeb;
+    --bg-color-intromsg: linear-gradient(to right, grey, skyblue) ;
+    --header-font: 'Nunito Sans', sans-serif;
+    --text-font: 'Source Sans Pro', sans-serif;
+    --bright-bg-color: linear-gradient(to bottom, grey, skyblue);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+/*main body styling*/
+.maincont {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.maincont2 {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.maincont2p2 {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.maintcont3 {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.col {
+    margin: 45px;
+    padding: 25px;
+}
+
+.col1 {
+    background-image: var(--bg-color-intromsg);
+ 
+}
+
+.col2 {
+    background-image: var(--bg-color-intromsg);
+}
+
+.col5 {
+    height: 60vh;
+}
+
+.par1 {
+    margin-top: 2%;
+    font-family: var(--text-font);
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.header2 {
+    color: var(--text-color);
+    font-family: var(--header-font);
+    font-size: 30px;
+}
+
+span {
+    color: #87ceeb;   
+}
+
+#linktoweb {
+    text-decoration: none;
+    color: var(--link-color); 
+}
+
+#linktoweb:hover {
+    color: var(--text-color);
+    transition: 0.2s ease-in;
+}
+
+#linktoapp {
+    color: var(--link-color);
+}
+
+#linktoapp:hover {
+    color: var(--text-color);
+    transition: 0.2s ease-in;
+}
+
+
+/*banner items*/
+.b1col {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 0;
+   text-align: center;
+   height: 100vh;
+   width: 1500px;
+}
+
+.b2col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    width: 1500px;
+}
+
+.b3col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    width: 1500px;
+    
+}
+
+.b1leftcol {
+    background-image: url('../images/b1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.b1rightcol {
+    background-image: var(--bright-bg-color);
+}
+
+.b1rightcolinfo {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: 30%;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+.b2leftcolp2 {
+    background-image: var(--bright-bg-color);
+}
+
+.b2lrightcolp2 {
+    background-image: url('../images/b2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.b2rightcolinfop2 {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: 30%;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+.b3col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.b3leftcol {
+    background-image: url('../images/b3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.b3rightcol {
+    background-image: var(--bright-bg-color);
+}
+
+.orderlink {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;  
+    margin-top: 2%; 
+    font-family: var(--text-font);
+}
+
+.orderlink a {
+    color: var(--text-color);
+    text-decoration: none;
+    width: 200px;
+    padding: 17px;
+    background-image: var(--bright-bg-color);
+    border-radius: 50px;
+}
+
+.orderlink a:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+/*responsive CSS*/
+@media(max-width: 767px) {
+    
+    .maincont {
+       display: block;
+    }
+   
+    .b1col {
+        grid-template-columns: 1fr;
+    }
+
+    .b2col {
+        grid-template-columns: 1fr;
+    }
+
+    .b3col {
+        grid-template-columns: 1fr;
+    }
+
+}

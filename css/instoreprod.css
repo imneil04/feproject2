@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: #fff;
+    --background-color:#000;
+    --span-color:#87ceeb;
+    --text-font: 'Source Sans Pro', sans-serif;
+    --header-font: 'Nunito Sans', sans-serif;
+    --custom-bg: linear-gradient(to bottom, grey, skyblue); 
+    --custom-btn-bg: linear-gradient(to right, grey, skyblue);
+    --header-color: #888888;
+}
+
+/*Products styling*/
+.introp {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-image: var(--custom-bg);
+    height: 80vh;
+}
+
+.intropdesc {
+    display: block;
+    color: var(--text-color);
+    padding: 15px; 
+    font-family: var(--text-font);
+}
+
+.intropdesc h2 {
+    font-family: var(--header-font);
+}
+
+.introlinkcont {
+    text-decoration: none;
+    border-radius: 50px;
+    width: 200px;
+    padding: 15px;
+    background-image: var(--custom-bg);
+    margin-top: 5%;
+    margin-left: 15%;
+    position: relative;
+    box-shadow: 5px 10px 10px #888888;
+}
+
+.introlinkcont a {
+    color: var(--text-color);  
+}
+
+.introlinkcont:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.prtitle {
+    display: block;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 35px;
+    padding: 25px;
+    font-family: var(--header-font);
+}
+
+.prcont1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+    margin: 35px;
+    padding: 25px;
+}
+
+.prcont1 h2 {
+    font-family: var(--header-font);
+}
+
+.prcont2 h2 {
+    font-family: var(--header-font);
+}
+
+.prsubtitle {
+    display: block;
+    align-items: center;
+    text-align: center;
+    font-family: var(--header-font);
+}
+
+.prsubtitle h2 {
+    color: var(--header-color);
+}
+
+.prsubtitle span {
+    color: var(--span-color);
+}
+
+.prcolcont {
+    padding: 25px;
+}
+
+.prcont2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+    margin: 35px;
+    padding: 25px;
+}
+
+.prcol4 {
+    padding: 25px;
+}
+
+.prcol5 {
+    padding: 25px;
+}
+
+.addOrder {
+    margin-top: 15px;
+    border-radius: 50px;
+    width: 150px;
+    padding: 17px;
+    text-align: center;
+    background-image: var(--custom-btn-bg);
+    cursor: pointer;
+    border: none;
+    box-shadow: 5px 10px 10px #888888;
+}
+
+.addOrder:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.priceSn {
+    display: block;
+    text-align: center;
+    align-items: center;
+    font-family: var(--text-font);
+}
+
+
+/*Responsive CSS*/
+@media(max-width: 767px){
+    .prcont1 {
+        display: block;
+        margin: 25px;
+    }
+
+    .prcont2 {
+        display: block;
+        margin: 25px;
+    }
+}

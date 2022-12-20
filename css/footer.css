@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --footercont-font: 'Poppins', sans-serif;
+    --header4-before-color:#87ceeb;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body .footercont {
+    line-height: 1.5;
+    font-family: var(--footercont-font)
+}
+
+
+.footercont {
+    max-width: 1250px;
+    margin: auto;
+  
+}
+
+.footer{
+    background-color: #070606e0;
+    padding: 70px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footercol {
+    width: 25%;
+    padding: 10px 15px;
+}
+
+.footercol h4{
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footercol h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--header4-before-color);
+    height: 2px;
+    box-sizing: border-box;
+    width: 65px;
+}
+
+.footercol ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footercol ul li a {
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footercol ul li a:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.footercol .soc-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fffefa;
+    transition: all 0.3s ease;
+}
+
+.footercol .soc-links a:hover {
+    color: #24263b;
+    background-color: #fffefa;
+}
+
+
+
+.footercr {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    color: #ffffff;
+    color: #bbbbbb;
+}
+
+.iinfos a {
+    display: inline-block;
+    font-size: 14px;
+    color: #ffffff;
+    color: #bbbbbb;
+    text-decoration: none;
+    padding: 3px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.iinfos a:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+/*responsive CSS*/
+@media(max-width: 767px) {
+    .footercol {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footercol {
+        width: 100%;
+    }
+}

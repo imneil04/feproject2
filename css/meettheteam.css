@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: #fff;
+    --background-color:#000;
+    --span-color:#87ceeb;
+    --text-font: 'Source Sans Pro', sans-serif;
+    --header-font: 'Nunito Sans', sans-serif;
+    --custom-bg: linear-gradient(to bottom, grey, skyblue); 
+    --custom-btn-bg: linear-gradient(to right, grey, skyblue);
+    --header-color: #888888;
+}
+
+.mtt {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: var(--custom-bg);
+    height: 80vh;
+}
+
+.tmtitle {
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding: 25px;
+    position: relative;
+    font-family: var(--text-font);
+    color: var(--text-color);
+}
+
+.tmtitle h2 {
+    font-family: var(--header-font);
+}
+
+.tmlink {
+    text-decoration: none;
+    border-radius: 50px;
+    width: 200px;
+    padding: 15px;
+    background-image: linear-gradient(to bottom, grey, skyblue);
+    margin-top: 5%;
+    margin-left: 15%;
+    position: relative;
+    box-shadow: 5px 10px 10px #888888;
+}
+
+.tmlink a {
+    color: var(--text-color);
+}
+
+.tmlink:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.mttcont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.tm {
+    margin: 35px;
+    padding: 35px;    
+}
+
+
+.mem-soc-links {
+    margin-top: 10%;
+}
+
+.tm .mem-soc-links a {
+    display: inline-block;
+    background-image: linear-gradient(to right, skyblue, grey);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 30%;
+    color: #fffefa;
+    transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
+}
+
+.tm .mem-soc-links a:hover {
+    color: #24263b;
+    background-color: #fffefa;
+}
+
+.tm p {
+    margin-top: 5%;
+    font-family: var(--text-font);
+}
+
+.tm h2 {
+    font-family: var(--header-font);
+}
+
+/*Contact us form style*/
+.mtcut {
+    display: block;
+    margin: 3%;
+    padding: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+.mtcut p {
+    font-family: var(--text-font);
+}
+
+.mtcut h2 {
+    font-family: var(--header-font);
+}
+
+.mtcut span {
+    color: #87ceeb;
+}
+
+.cuform {
+    display: block;
+    text-align: center;
+    align-items: center;
+    height: 70vh;
+    margin: 25px;
+    padding: 25px;
+}
+
+.cuform p {
+    font-family: var(--text-font);
+}
+
+.cuform h2 {
+    font-family: var(--header-font);
+    position: relative;
+   
+}
+
+.cuform h2::after {
+    content: '';
+    position:absolute;
+    left:50%;
+    bottom: -7px;
+    transform: translate(-50%);
+    height: 4px;
+    width: 200px;
+    border-radius: 2px;
+    background-color: #87ceeb;
+}
+
+.collinfo {
+    position: relative;
+    margin-top: 4%;
+}
+
+.in-cont {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    background-color: #87ceeb;
+    color: #fff;
+    text-align: center;
+}
+
+.in-field {
+    padding: 10px;
+    outline: none;
+}
+
+.in-field:focus {
+    border: 2px solid #87ceeb;
+    transition: 0.2s ease-in-out;
+}
+
+textarea {
+    resize: none;
+}
+
+.ccbtn {
+    background-color: #888888;
+    color: #fff;
+    padding: 15px 15px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.ccbtn:hover {
+    background-color: #87ceeb;
+    transition: 0.3s ease-in-out;
+}
+
+/*Responsive CSS*/
+@media(max-width: 767px) {
+
+    .mttcont {
+        display: block;
+        margin: 25px;
+    }
+
+    .collinfo {
+        margin-top: 10%;
+    }
+ 
+}

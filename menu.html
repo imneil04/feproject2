@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+    <link rel="icon" type="image" href="./images/iconcoffee.ico">
+
+    <!--stylesheets -->
+    <link rel="stylesheet" type="text/css" href="./css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="./css/menu.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer.css">
+
+    <!--font awesome icons(custom kit)-->
+    <script src="https://kit.fontawesome.com/a067fef9cd.js" crossorigin="anonymous"></script>
+
+     <!--jQuery library CDN link-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <!--Menu bar-->
+    <div class="menuwrapper">
+        
+        <nav class="topnav">
+            <a href="index.html"><span class="logo"><img src="./images/iconcoffee.png" id="imglogo"></span></a>
+            <button id="hamburger" class="hamburger">
+                <i class="fa fa-bars"></i>
+            </button> 
+            
+            <ul id="navLinks" class="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a>
+                    
+                    <!--dropdown child items-->
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="#coffeemenu">Hot & Cold Drinks</a></li>
+                            <li><a href="#sp">Sandwiches & Pastries</a></li>
+                            <li><a href="#staffpicks">Staff Picks</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="instoreprod.html">Products</a>
+
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="instoreprod.html">In-Store Products</a></li>
+                            <li><a href="instoreprod.html">Seasonal</a></li>
+                        </ul>
+                    </div>  
+                </li>
+                <li><a href="meettheteam.html">Meet the Team</a>
+                
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="meettheteam.html">About Us</a></li>
+                            <li><a href="meettheteam.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!--Login options-->
+                <div class="membercont">
+                    <a href="#" class="memberinfo">Sign In</a>
+                    <a href="#" class="memberinfo">Become a Member</a>
+                </div>
+
+                <div class="shopinfo">
+                    <div class="fa fa-cart-shopping" class="cartbtn" id="cartbtn"></div>
+                </div>
+
+                  <!--Cart items -->
+                  <div class="cart-items-container" id="cart-items-container">
+                   
+                    <div class="cart-item">
+
+                        <span class="fa fa-times"></span>
+                        <img src="./images/coffee2.png" alt="">
+                        <div class="content">
+                            <h3>item 1</h3>
+                            <div class="price">$8.99/-</div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+
+                        <span class="fa fa-times"></span>
+                        <img src="./images/coffee3.png" alt="">
+                        <div class="content">
+                            <h3>item 2</h3>
+                            <div class="price">$10.99/-</div>
+                        </div>
+                    </div>
+                    <a href="#" class="checkoutbtn">Checkout Now</a>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <!--Body head contents-->
+    <div class="introm">
+        
+        <div class="introcont">
+            <h2>ENJOY YOUR MORNINGS WITH A GREAT FOOD.</h2>
+            <p>Just a placeholder information. Something relevant will be put in later on.</p>
+            
+            <div class="introlink">
+                <a href="menu.html">Order Now</a>
+            </div>
+        </div>
+    </div>
+    
+    <!--Main body contents-->
+    <div class="mtitle">
+       <section id="coffeemenu"> <h2 class="header2"><span>OUR COFFEE</span> MENU</h2></section>
+    </div>
+            <div class="mmaincont">
+
+                <!--Item 1-->
+                <div class="mcol mcol1">
+                    <div class="item1" id="item1">
+                        <h2 class="title">Coffe Choice 1</h2>
+                        <img src="./images/coffee2.png"><br />
+
+                        <label>Sizes:</label><br />
+                        <div class="priceDesc">
+                            <label>SMALL: $7.99</label><p>MEDIUM: $9.99</p><p>LARGE: $10.99</p>
+                        </div>
+                        <div class="drink-size" id="drink-size">
+                           <div class="cradio "><span class="size" id="small">S</span></div>
+                           <div class="cradio" ><span class="size" id="medium">M</span></div>
+                           <div class="cradio"><span class="size" id="large">L</span></div>
+                        </div>
+
+
+                        <div class="ing">
+                            <div class="dd-dropdown">
+                                <button class="dbtn">Pick Your Dairy <i class=" fa fa-caret-down"></i></button>
+                                <div class="dd-content">
+                                    <span>Cream</span>
+                                    <span>Milk(2% or Reg)</span>
+                                    <span>Soy Milk</span>
+                                </div>
+                            </div> <br />
+    
+                            <div class="sw-dropdown">
+                                <button class="swbtn">Pick Your Sweetener <i class=" fa fa-caret-down"></i></button>
+                                <div class="sw-content">
+                                    <span>Sugar</span>
+                                    <span>Sweetener</span>
+                                    <span>Brown Sugar</span>
+                                </div>
+                            </div> <br />
+                        </div>
+                        
+                        <textarea placeholder="Any other requests..." class="tarea"></textarea> <br />
+                        <button class="addOrder">Add to Order</button>
+                    </div>
+                   
+                </div>
+
+                <!--Item 2-->
+                <div class="mcol mcol2">
+                    <div class="item2" id="item2">
+                        <h2 class="title">Coffe Choice 2</h2>
+                        <img src="./images/coffee3.png"><br />
+
+                        <label>Sizes:</label><br />
+                        <div class="priceDesc">
+                            <label>SMALL: $7.99</label><p>MEDIUM: $9.99</p><p>LARGE: $10.99</p>
+                        </div>
+                        <div class="drink-size" id="drink-size2">
+                           <div class="cradio"><span class="size" id="small">S</span></div>
+                           <div class="cradio" ><span class="size" id="medium">M</span></div>
+                           <div class="cradio"><span class="size" id="large">L</span></div>
+                        </div>
+
+
+                        <div class="ing">
+                            <div class="dd-dropdown">
+                                <button class="dbtn">Pick Your Dairy <i class=" fa fa-caret-down"></i></button>
+                                <div class="dd-content">
+                                    <span>Cream</span>
+                                    <span>Milk(2% or Reg)</span>
+                                    <span>Soy Milk</span>
+                                </div>
+                            </div> <br />
+    
+                            <div class="sw-dropdown">
+                                <button class="swbtn">Pick Your Sweetener <i class=" fa fa-caret-down"></i></button>
+                                <div class="sw-content">
+                                    <span>Sugar</span>
+                                    <span>Sweetener</span>
+                                    <span>Brown Sugar</span>
+                                </div>
+                            </div> <br />
+                        </div>
+                        
+
+                        <textarea placeholder="Any other requests..." class="tarea"></textarea> <br />
+                        <button class="addOrder">Add to Order</button>
+                    </div>
+                </div>
+
+                <!--Item 3-->
+                <div class="mcol mcol3">
+                    <div class="item3" id="item3">
+                        <h2 class="title">Coffe Choice 3</h2>
+                        <img src="./images/tea.png"><br />
+
+                        <label>Sizes:</label><br />
+                        <div class="priceDesc">
+                            <label>SMALL: $7.99</label><p>MEDIUM: $9.99</p><p>LARGE: $10.99</p>
+                        </div>
+                        <div class="drink-size" id="drink-size3">
+                           <div class="cradio"><span class="size" id="small">S</span></div>
+                           <div class="cradio" ><span class="size" id="medium">M</span></div>
+                           <div class="cradio"><span class="size" id="large">L</span></div>
+                        </div>
+
+
+                        <div class="ing">
+                            <div class="dd-dropdown">
+                                <button class="dbtn">Pick Your Dairy <i class=" fa fa-caret-down"></i></button>
+                                <div class="dd-content">
+                                    <span>Cream</span>
+                                    <span>Milk(2% or Reg)</span>
+                                    <span>Soy Milk</span>
+                                </div>
+                            </div> <br />
+    
+                            <div class="sw-dropdown">
+                                <button class="swbtn">Pick Your Sweetener <i class=" fa fa-caret-down"></i></button>
+                                <div class="sw-content">
+                                    <span>Sugar</span>
+                                    <span>Sweetener</span>
+                                    <span>Brown Sugar</span>
+                                </div>
+                            </div> <br />
+                        </div>
+                        
+
+                        <textarea placeholder="Any other requests..." class="tarea"></textarea> <br />
+                        <button class="addOrder">Add to Order</button>
+                    </div>
+
+                </div>
+
+                <!--Item 4-->
+                <div class="mcol mcol4">
+                    <div class="item4" id="item4">
+                        <h2 class="title">Coffe Choice 4</h2>
+                        <img src="./images/tea2.png"><br />
+
+                        <label>Sizes:</label><br />
+                        <div class="priceDesc">
+                            <label>SMALL: $7.99</label><p>MEDIUM: $9.99</p><p>LARGE: $10.99</p>
+                        </div>
+                        <div class="drink-size" id="drink-size4">
+                           <div class="cradio"><span class="size" id="small">S</span></div>
+                           <div class="cradio" ><span class="size" id="medium">M</span></div>
+                           <div class="cradio"><span class="size" id="large">L</span></div>
+                        </div>
+
+
+                        <div class="ing">
+                            <div class="dd-dropdown">
+                                <button class="dbtn">Pick Your Dairy <i class=" fa fa-caret-down"></i></button>
+                                <div class="dd-content">
+                                    <span>Cream</span>
+                                    <span>Milk(2% or Reg)</span>
+                                    <span>Soy Milk</span>
+                                </div>
+                            </div> <br />
+    
+                            <div class="sw-dropdown">
+                                <button class="swbtn">Pick Your Sweetener <i class=" fa fa-caret-down"></i></button>
+                                <div class="sw-content">
+                                    <span>Sugar</span>
+                                    <span>Sweetener</span>
+                                    <span>Brown Sugar</span>
+                                </div>
+                            </div> <br />
+                        </div>
+                        
+
+                        <textarea placeholder="Any other requests..." class="tarea"></textarea> <br />
+                        <button class="addOrder">Add to Order</button>
+                    </div>
+                </div>
+
+                <!--Item 5-->
+                <div class="mcol mcol5">
+                    <div class="item5" id="item5">
+                        <h2 class="title">Coffe Choice 5</h2>
+                        <img src="./images/coffee2.png"><br />
+
+                        <label>Sizes:</label><br />
+                        <div class="priceDesc">
+                            <label>SMALL: $7.99</label><p>MEDIUM: $9.99</p><p>LARGE: $10.99</p>
+                        </div>
+                        <div class="drink-size" id="drink-size5">
+                           <div class="cradio"><span class="size" id="small">S</span></div>
+                           <div class="cradio" ><span class="size" id="medium">M</span></div>
+                           <div class="cradio"><span class="size" id="large">L</span></div>
+                        </div>
+
+
+                        <div class="ing">
+                            <div class="dd-dropdown">
+                                <button class="dbtn">Pick Your Dairy <i class=" fa fa-caret-down"></i></button>
+                                <div class="dd-content">
+                                    <span>Cream</span>
+                                    <span>Milk(2% or Reg)</span>
+                                    <span>Soy Milk</span>
+                                </div>
+                            </div> <br />
+    
+                            <div class="sw-dropdown">
+                                <button class="swbtn">Pick Your Sweetener <i class=" fa fa-caret-down"></i></button>
+                                <div class="sw-content">
+                                    <span>Sugar</span>
+                                    <span>Sweetener</span>
+                                    <span>Brown Sugar</span>
+                                </div>
+                            </div> <br />
+                        </div>
+                        
+
+                        <textarea placeholder="Any other requests..." class="tarea"></textarea> <br />
+                        <button class="addOrder">Add to Order</button>
+                    </div>
+                </div>
+
+                <!--Item 6-->
+                <div class="mcol mcol6">
+                    <div class="item6" id="item6">
+                        <h2 class="title">Coffe Choice 6</h2>
+                        <img src="./images/coffee3.png"><br />
+
+                        <label>Sizes:</label><br />
+                        <div class="priceDesc">
+                            <label>SMALL: $7.99</label><p>MEDIUM: $9.99</p><p>LARGE: $10.99</p>
+                        </div>
+                        <div class="drink-size" id="drink-size6">
+                           <div class="cradio"><span class="size" id="small">S</span></div>
+                           <div class="cradio" ><span class="size" id="medium">M</span></div>
+                           <div class="cradio"><span class="size" id="large">L</span></div>
+                        </div>
+
+
+                        <div class="ing">
+                            <div class="dd-dropdown">
+                                <button class="dbtn">Pick Your Dairy <i class=" fa fa-caret-down"></i></button>
+                                <div class="dd-content">
+                                    <span>Cream</span>
+                                    <span>Milk(2% or Reg)</span>
+                                    <span>Soy Milk</span>
+                                </div>
+                            </div> <br />
+    
+                            <div class="sw-dropdown">
+                                <button class="swbtn">Pick Your Sweetener <i class=" fa fa-caret-down"></i></button>
+                                <div class="sw-content">
+                                    <span>Sugar</span>
+                                    <span>Sweetener</span>
+                                    <span>Brown Sugar</span>
+                                </div>
+                            </div> <br />
+                        </div>
+                        
+
+                        <textarea placeholder="Any other requests..." class="tarea"></textarea> <br />
+                        <button class="addOrder">Add to Order</button>
+                    </div>
+                </div>
+            </div>
+
+        <!--breakfast menu-->
+        <div class="mtitle mbf">
+           <section id ="sp"> <h2 class="header2"><span>SANDWICHES</span> & PASTRIES</h2></section>
+        </div>
+        
+            <div class="mmaincont2">
+
+                <!--Item 7-->
+                <div class="mcol mcol7">
+                   
+                    <h2>Sandwich 1</h2>
+                    <img src="./images/sandwich1.png">
+
+                    <div class="priceDescS">
+                        <label>REGULAR: $6.99</label><p> DOUBLE EGG: $7.99</p><p>DELUXE: $9.99</p>
+                    </div>
+
+                    
+                    <div class="s-ing">
+                        <div class="s-dropdown">
+                            <button class="sbtn">Extras <i class=" fa fa-caret-down"></i></button>
+                            <div class="s-content">
+                                <span>Add Bacon</span>
+                                <span>Add Butter or Peanut Butter</span>
+                                <span>Add Chicken</span>
+                            </div>
+                        </div> <br />
+                    </div>
+
+                    <textarea placeholder="Any other requests..." class="tarea"></textarea> <br />
+                    <button class="addOrder">Add to Order</button>
+                </div>
+
+                <!--Item 8-->
+                <div class="mcol mcol8">
+                    <h2>Breakfast Choice 1</h2>
+                    <img src="./images/bfast1.png">
+
+                    <div class="priceDescS">
+                        <label>REGULAR: $6.99</label><p> DOUBLE EGG: $7.99</p><p>DELUXE: $9.99</p>
+                    </div>
+
+                    <div class="s-ing">
+                        <div class="s-dropdown">
+                            <button class="sbtn">Extras <i class=" fa fa-caret-down"></i></button>
+                            <div class="s-content">
+                                <span>Add Bacon</span>
+                                <span>Add Butter or Peanut Butter</span>
+                                <span>Add Chicken</span>
+                            </div>
+                        </div> <br />
+                    </div>
+
+                    <textarea placeholder="Any other requests..." class="tarea"></textarea> <br />
+                    <button class="addOrder">Add to Order</button>
+                </div>
+
+                <!--Item 9-->
+                <div class="mcol mcol9">
+                    <h2>Pastry Choice 1</h2>
+                    <img src="./images/dessert1.png">
+
+                    <div class="priceDescS">
+                        <label>SINGLE: $1.99</label><p> HALF: $5.99</p><p>WHOLE: $8.99</p>
+                    </div>
+
+                    
+                    <div class="s-ing">
+                        <div class="s-dropdown">
+                            <button class="sbtn">Extras <i class=" fa fa-caret-down"></i></button>
+                            <div class="s-content">
+                                <span>Extra Sprinkles</span>
+                                <span>Extra Chocolate</span>
+                                <span>Add Almonds</span>
+                            </div>
+                        </div> <br />
+
+                        <textarea placeholder="Any other requests..." class="tarea"></textarea> <br />
+                        <button class="addOrder">Add to Order</button>
+                    </div>
+                </div>
+            </div>
+
+         <!--desserts menu-->
+         <div class="mtitle mbf">
+           <section id="staffpicks"> <h2 class="header2"><span>STAFF'S</span> PICK</h2></section>
+        </div>
+
+            <div class="mmaincont3">
+
+                <!--Item 10-->
+                <div class="mcol mcol10">
+                    <h2>Staff Pick 1</h2>
+                    <img src="./images/spick1.png">
+
+                    <div class="priceDescS">
+                        <label>SMALL: $5.99</label><p> MEDIUM: $7.99</p><p>LARGE: $10.99</p>
+                    </div>
+
+                    
+                    <div class="s-ing">
+                        <div class="s-dropdown">
+                            <button class="sbtn">Proteins <i class=" fa fa-caret-down"></i></button>
+                            <div class="s-content">
+                                <span>Add Bacon</span>
+                                <span>Add Pork</span>
+                                <span>Add Chicken</span>
+                                <span>Add Beef</span>
+                            </div>
+                        </div> <br />
+
+                        <textarea placeholder="Any other requests..." class="tarea"></textarea> <br />
+                        <button class="addOrder">Add to Order</button>
+                    </div>
+                </div>
+
+                <!--Item 11-->
+                <div class="mcol mcol11">
+                    <h2>Staff Pick 2</h2>
+                    <img src="./images/spick2.png">
+
+                    <div class="priceDescS">
+                        <label>SINGLE: $1.99</label><p> HALF: $5.99</p><p>WHOLE: $8.99</p>
+                    </div>
+
+                    
+                    <div class="s-ing">
+                        <div class="s-dropdown">
+                            <button class="sbtn">Extras <i class=" fa fa-caret-down"></i></button>
+                            <div class="s-content">
+                                <span>Extra Sprinkles</span>
+                                <span>Extra Chocolate</span>
+                                <span>Add Almonds</span>
+                            </div>
+                        </div> <br />
+
+                        <textarea placeholder="Any other requests..." class="tarea"></textarea> <br />
+                        <button class="addOrder">Add to Order</button>
+                    </div>
+                </div>
+
+                <!--Item 12-->
+                <div class="mcol mcol12">
+                   
+                    <div class="item12" id="item12">
+                        <h2 class="title">Staff Pick 3</h2>
+                        <img src="./images/spick3.png"><br />
+
+                        <label>Sizes:</label><br />
+                        <div class="priceDesc">
+                            <label>SMALL: $7.99</label><p>MEDIUM: $9.99</p><p>LARGE: $10.99</p>
+                        </div>
+                        <div class="drink-size" id="drink-size7">
+                           <div class="cradio "><span class="size" id="small">S</span></div>
+                           <div class="cradio" ><span class="size" id="medium">M</span></div>
+                           <div class="cradio"><span class="size" id="large">L</span></div>
+                        </div>
+
+
+                        <div class="ing">
+                            <div class="dd-dropdown">
+                                <button class="dbtn">Pick Your Dairy <i class=" fa fa-caret-down"></i></button>
+                                <div class="dd-content">
+                                    <span>Cream</span>
+                                    <span>Milk(2% or Reg)</span>
+                                    <span>Soy Milk</span>
+                                </div>
+                            </div> <br />
+    
+                            <div class="sw-dropdown">
+                                <button class="swbtn">Pick Your Sweetener <i class=" fa fa-caret-down"></i></button>
+                                <div class="sw-content">
+                                    <span>Sugar</span>
+                                    <span>Sweetener</span>
+                                    <span>Brown Sugar</span>
+                                </div>
+                            </div> <br />
+                        </div>
+                        
+                        <textarea placeholder="Any other requests..." class="tarea"></textarea> <br />
+                        <button class="addOrder">Add to Order</button>
+                    </div>
+                </div>
+            </div>
+
+    <!--Footer-->
+    <div class="footer">
+
+        <div class="footercont">
+            <div class="row">
+                <div class="footercol">
+                    <h4>OUR STORY</h4>
+
+                    <ul>
+                        <li><a href="#">Our Coffee</a></li>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">Our Customer Service</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footercol">
+                    <h4>WORK WITH US</h4>
+
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Internal Corporate Careers</a></li>
+                        <li><a href="#">Retail Barista Roles</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footercol">
+                    <h4>GENERAL INQUIRIES</h4>
+
+                    <ul>
+                        <li><a href="#">How to Order on the App</a></li>
+                        <li><a href="#">How to Order Online</a></li>
+                        <li><a href="#">Delivery or Pickup Options</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                    </ul>
+                </div>
+
+        
+                <div class="footercol">
+                    <h4>CONNECT WITH US</h4>
+
+                    <div class="soc-links">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+
+                    <div class="iinfos">
+                        <a href="#">Terms of Use</a> <a href="#">Privacy</a>
+                    </div>
+                </div>  
+            </div>
+                 <div class="footercr">Project website created by MarkDR.</div>
+        </div>
+    </div>
+
+    <!--external JS file-->
+   <script src="./javascript/navbar.js"></script> 
+   <script src="./javascript/cart.js"></script>
+   <script src="./javascript/menu.js"></script>
+   <script src="./javascript/menu2.js"></script>
+</body>
+</html>
