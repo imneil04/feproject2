@@ -15,3 +15,4 @@ Scalability:
 1. Plans to turn into a full-stack website later on
 2. Incorporate dark-mode/light-mode feature
 3. Interface modifications, improvements, and additions (layout, alignments, colors, animations, fonts, etc)
+4. More JavaScript implementation (button, form functions)
